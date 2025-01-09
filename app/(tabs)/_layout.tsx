@@ -8,18 +8,19 @@ export default function TabLayout() {
         headerStyle: {
           backgroundColor: "#D9D9D9",
         },
+        headerTitle: "",
         tabBarStyle: {
           backgroundColor: "#D9D9D9",
           height: 90,
-          borderTopWidth: 20, // Border at the top
+          borderTopWidth: 20,
           borderTopColor: "#c89cc9",
         },
-        tabBarActiveTintColor: "#222222", // Active tab color
+        tabBarActiveTintColor: "#222222",
         tabBarInactiveTintColor: "#888",
       }}
     >
       <Tabs.Screen
-        name="index"
+        name="(home)"
         options={{
           title: "Home",
           tabBarIcon: () => (
@@ -28,7 +29,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="booking"
+        name="(booking)"
         options={{
           title: "Booking",
           tabBarIcon: () => (
@@ -37,7 +38,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="calendar"
+        name="(calendar)"
         options={{
           title: "Calendar",
           tabBarIcon: () => (
@@ -46,7 +47,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="account"
+        name="(account)"
         options={{
           title: "Account",
           tabBarIcon: () => (
